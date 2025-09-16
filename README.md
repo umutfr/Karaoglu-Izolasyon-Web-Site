@@ -13,7 +13,7 @@ Site, **HTML, CSS ve JavaScript** kullanılarak geliştirilmiş ve **Vercel** ü
 
 ## 📖 Kaynak & İlham
 
-Bu proje, [YouTube'daki örnek proje videosu]([https://youtube.com/...](https://www.youtube.com/watch?v=3BH13mP9HVE&t=7029s)) temel alınarak geliştirilmiştir.  
+Bu proje, <a href="https://www.youtube.com/watch?v=3BH13mP9HVE&t=7029s" target="_blank">YouTube'daki örnek proje videosu</a> temel alınarak geliştirilmiştir.  
 Ancak tamamen kopya değildir; tasarım ve kod üzerinde çeşitli değişiklikler yapılmıştır.  
 Bu sayede proje hem öğrenme sürecine katkı sağlamış hem de özgün hale getirilmiştir.
 
