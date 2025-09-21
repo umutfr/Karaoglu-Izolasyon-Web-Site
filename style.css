@@ -130,8 +130,8 @@ section{
     border-radius: 5%;
 }
 .home-img img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 600px;
     border-radius: 5%;
     position: relative;
     box-shadow: 0 0 25px var(--main-color);
@@ -245,8 +245,8 @@ section{
     0%, 20% { content: "İzolasyon"; }
     21%, 40% { content: "Yalıtım"; }
     41%, 60% { content: "İnşaat"; }
-    61%, 80% { content: "UI/UX Designer"; }
-    81%, 100% { content: "Freelancer"; }
+    61%, 80% { content: "Malzeme"; }
+    81%, 100% { content: "Uygulama"; }
 }
 
 @keyframes typing {
