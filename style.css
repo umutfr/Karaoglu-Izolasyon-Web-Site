@@ -376,13 +376,13 @@ section{
 .service-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: start; /* içerikler yukarı hizalansın */
     gap: 5rem;
 }
 
 .service-box{
     background-color: var(--main-color);
-    height: 300px;
+    min-height: 300px; /* sabit height yerine min-height */
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -396,14 +396,29 @@ section{
     transform: scale(1.03);
 }
 
+.service-info img {
+    border: 3px solid transparent; /* önce görünmez çerçeve */
+    border-radius: 1rem;
+    width: 500px;
+    height: 300px;
+    transition: 0.3s ease-in-out;
+    margin: 2px auto;
+    margin-top: 15px;
+    display: block;
+}
+
+.service-info img:hover {
+    border-color: var(--bg-color); /* hover olunca renk belirir */
+}
+
 .service-box .service-info{
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 5rem 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem;
+    /* max-height kaldırıldı */
 }
 
 .service-info h4{
@@ -414,10 +429,10 @@ section{
 .service-info p{
     font-size: 1.6rem;
     font-weight: 600;
-    max-height: 1000px;
     line-height: 1.7;
-    margin: auto;
+    margin: 0;
 }
+
 
 .testimonials{
     background-color: var(--second-bg-color);
