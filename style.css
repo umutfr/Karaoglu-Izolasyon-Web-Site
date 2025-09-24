@@ -15,7 +15,7 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color:#fff;
-    --main-color: #cf0505;
+    --main-color: #9e0000;
 }
 
 html{
@@ -557,4 +557,44 @@ section{
     text-align: center;
     margin-top: 30px;
     font-size: 16px;
+}
+
+.home-content3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #555;
+}
+
+.tagline3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+.logo-wrapper3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ortadan hizalar */
+  gap: 10px;
+}
+
+.k3 {
+  font-size: 120px;  /* büyük K */
+  font-weight: 900;
+  color: var(--main-color);
+  line-height: 1;
+}
+
+.rest3 {
+  font-size: 80px;   /* daha büyük “ARAOĞLU” */
+  font-weight: 800;
+  color: #444;
+}
+
+.sub3 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #777;
+  margin-top: 8px;
 }
