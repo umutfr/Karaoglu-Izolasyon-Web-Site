@@ -584,12 +584,14 @@ section{
   font-weight: 900;
   color: var(--main-color);
   line-height: 1;
+  text-shadow: 0 0 25px var(--main-color);
 }
 
 .rest3 {
-  font-size: 80px;   /* daha büyük “ARAOĞLU” */
+  font-size: 80px;   /* daha büyük “KARAOĞLU” */
   font-weight: 800;
   color: #444;
+  
 }
 
 .sub3 {
@@ -597,4 +599,88 @@ section{
   font-weight: 500;
   color: #777;
   margin-top: 8px;
+}
+/* -------------------- Container Ayarları -------------------- */
+.contact-items {
+    display: flex; /* Yan yana dizmek için flex container */
+    justify-content: center; /* Çocukları yatayda ortala */
+    align-items: stretch; /* Tüm çocuklar aynı yükseklikte olsun (dikey çizgi için) */
+    gap: 5rem; /* Çocuklar arası boşluk */
+    border: 2px solid var(--main-color); /* Ana renkli border */
+    border-radius: 4rem; /* Köşeleri yuvarlat */
+    padding: 2rem; /* İçerik ile border arasında boşluk */
+}
+
+/* -------------------- Sol Konum Kısmı -------------------- */
+.contact-location {
+    display: flex;
+    flex-direction: column; /* İçerik yukarıdan aşağı dizilsin */
+    justify-content: center; /* İçeriği dikeyde ortala */
+    text-align: center; /* Metinleri ortala */
+}
+
+/* H3 + ikon ayarı */
+.contact-location h3 {
+    display: flex; /* İkon ve metni yan yana hizalamak için */
+    align-items: center; /* Dikey ortala */
+    justify-content: center;
+    gap: 5px; /* İkon ile metin arası boşluk */
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* -------------------- Dikey Çizgi -------------------- */
+.contact-line {
+    width: 2px; /* Çizgi kalınlığı */
+    background-color: var(--main-color) /* Çizgi rengi */
+}
+
+/* -------------------- Sağ Kısım -------------------- */
+.contact-others {
+    display: flex;
+    flex-direction: column; /* H3 ve p alt alta dizilsin */
+    justify-content: flex-start; /* Yukarıdan başla */
+    text-align: left; /* İçerik kendi divinin solundan başlasın */
+}
+
+/* H3 + ikon ayarı (sol ve sağda aynı) */
+.contact-others h3 {
+    display: flex;
+    align-items: center; /* İkon ve yazıyı dikey ortala */
+    gap: 5px; /* İkon ile metin arası boşluk */
+    margin-bottom: 0; /* H3 ile altındaki p arasına boşluk koyma */
+}
+
+/* H3 + H3 arası boşluk */
+.contact-others h3 + h3 {
+    margin-top: 30px; /* Sadece H3'ler arası mesafe */
+}
+
+/* P etiketleri (altındaki boşlukları kaldır) */
+.contact-others p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+    padding-top: 10px; /* Metin üstüne biraz boşluk */
+}
+
+/* -------------------- Sosyal Medya Bağlantıları -------------------- */
+.contact-social {
+    display: flex; /* Yan yana diz */
+    flex-direction: row; /* Default row zaten, opsiyonel */
+    justify-content: flex-start; /* Sol hizala */
+    gap: 1rem; /* Bağlantılar arası boşluk */
+}
+
+.contact-social a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------------- Genel H3 + İkon Boyutu -------------------- */
+.contact-items h3,
+.contact-items i {
+    font-size: 2.5rem; /* İkon ve H3 boyutu eşit */
 }
